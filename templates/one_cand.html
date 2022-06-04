@@ -1,0 +1,13 @@
+{% extends 'home.html' %}
+
+{% block title %}
+{{ cand["name"] }}
+{% endblock %}
+
+
+{% block body %}
+<h1>{{ cand["name"] }}</h1>
+<p>{{ cand["id"] }}</p>
+<img src="{{ cand['picture'] }}" width=200/>
+<p>{{ cand["skills"] }}</p>
+{% endblock %}
